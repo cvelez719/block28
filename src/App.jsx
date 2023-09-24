@@ -1,10 +1,10 @@
 import { _useState } from 'react'
-import './index.css'
-import { _createRoot } from 'react-dom/client'
+import  './index.css'
+import { _CreateRoot } from 'react-dom/client'
 import {  Routes, Route, Link } from "react-router-dom";
-import _Blue from './components/blue';
-import _Red from './components/red';
-import _home from './components/home';
+import Blue from './components/blue';
+import Red from './components/red';
+import Home from './components/home';
 
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
         </div>
         <div id="main-section">
           <Routes>
-            <Route path="/blue" element={<h1>Blue</h1>}/>
-            <Route path="/red" element={<h1>Red</h1>}/>
-            <Route path="/home" element={<h1>Home</h1>}/>
+          <Route path="/" element={<Blue />}/>
+            <Route path="/" element={<Red />}/>
+            <Route path="/" element={<Home />}/>
           </Routes>
           </div>
       </div>
